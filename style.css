@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(160deg,rgb(3, 3, 70),rgb(224, 116, 224));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top:10px;
+    text-shadow: 0 0 20px wheat;
+}
+.container form{
+    width: 90%;
+    max-width: 600px;
+    padding: 10px 30px 20px;
+    background:linear-gradient(45deg,rgb(74, 9, 194),rgb(252, 250, 250));
+    border-radius: 4px;
+    box-shadow: 0 14px 30px rgba(74,9,194, 0.5);
+    position: relative;
+}
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.row label{
+    flex-basis: 28%;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+.row input,.row textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    color:white;
+    font-size: 19px;
+}
+::placeholder{
+    font-size: 15px;
+    color: #dbd5d5;
+    
+}
+form button{
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.7);
+    padding: 10px 50px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+form button:hover{
+    background-color: rgb(48, 48, 158);
+}
+.row span{
+    position: absolute;
+    bottom: 12px;    
+    right: 17px;
+    font-size: 13px;
+    color: red;
+}
+#submit-error{
+    color: red;
+}
+.row span i{
+    color: green;
+}
+@media(max-width:768px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .container form{
+        margin-top: 35px;
+    }
+    .row label{
+        font-size: 18px;
+        padding: 14px 0;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .row textarea{
+        flex-basis: 100%;
+    }
+}

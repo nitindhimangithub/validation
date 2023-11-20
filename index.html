@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/634c2646de.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form Validation</h1>
+        <form>
+            <div class="row">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="fun()">
+                <span id="name-error"></span>
+            </div>
+            <div class="row">
+                <label>Phone No.</label>
+                <input type="tel" placeholder="123 456 7890" id="phn" onkeyup="fun2()">
+                <span id="phone-error"></span>
+            </div>
+            <div class="row">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter Email" id="ema" onkeyup="fun3()">
+                <span id="email-error"></span>
+            </div>
+            <div class="row">
+                <label>Message</label>
+                <textarea rows="5" placeholder="Enter your Message" id="messag" onkeyup="fun4()"></textarea>
+                <span id="message-error"></span>
+            </div>
+            <button onclick="return fun5()">Submit</button>
+            <span id="submit-error"></span>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
